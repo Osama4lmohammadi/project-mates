@@ -1,0 +1,243 @@
+:root {
+  --primary: hsl(122, 39%, 49%);
+  --muted: #f5f7fb;
+  --card: #ffffff;
+  --text: #172b4d;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--muted);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.profile-header {
+  background-color:var(--primary);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.profile-header h3 {
+  margin: 0;
+}
+
+.profile-info {
+  margin: 20px 0;
+}
+section .profile-info,.section{
+    background: #e9ecef;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1 1 calc(33% - 20px);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+}
+.section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.section ul li {
+  margin: 5px 5px;
+  background-color:cornflowerblue ;
+  border-radius: 12px;
+  padding: 2px 2px 2px 2px;
+
+}
+
+section h4{
+  color: #172b4d;
+}
+.topbar {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar h2 {
+  margin: 0;
+  display: inline;
+}
+
+.topbar nav {
+  float: right;
+}
+
+.topbar nav a {
+  color: rgba(255, 255, 255, 0.95);
+  margin-left: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dashboard {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.teammate-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.teammate-card {
+  background: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1 1 calc(33% - 20px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.teammate-card h5 {
+  margin: 0 0 10px;
+}
+
+.invite-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.invite-button:hover {
+  background: #45a049;
+}
+
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(20, 30, 50, 0.06);
+}
+
+.center {
+  margin: 80px auto;
+  max-width: 420px;
+  padding: 28px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6eef8;
+  border-radius: 6px;
+  margin: 8px 0;
+  outline: none;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 8px;
+  display: block;
+  color:var(--text);
+}
+
+
+button {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  margin: auto;
+  display: block;
+}
+.view-profile{
+background: var(--primary);
+  color: #fff;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+}
+
+.alert {
+  background: #ffe8e8;
+  color: #8b1f1f;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+fieldset {
+  border: 1px solid #eef4ff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+legend {
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.user-card {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #eef4ff;
+  background: linear-gradient(180deg, #fff, #fbfdff);
+}
+
+h2,
+h3
+ {
+  margin: 0 0 8px 0;
+  color: var(--card);
+}
+h4{
+  color: #45a049;
+}
+h1{
+  text-align: center;
+  color: var(--text);
+}
+
+p {
+  margin: 6px 0;
+}
+
+a {
+  color: var(--primary);
+}
